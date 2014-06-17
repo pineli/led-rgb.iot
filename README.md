@@ -38,7 +38,7 @@ Selecione a cor preferida e a mesma será enviada via Websocket ao NodeJS/Johnny
 
 # Circuito utilizado
 
-![https://github.com/Pineli/Controle-led-rgb/blob/master/breadboard/led-rgb.png](breadboard/led-rgb.png)
+![Arduino](https://github.com/Pineli/johnny-five/raw/master/docs/breadboard/led-rgb.png)
 
 
 ## License
