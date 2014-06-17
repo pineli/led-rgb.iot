@@ -1,4 +1,45 @@
-Controle-led-rgb
-================
-
 Controle de led RGB com Node.JS + socket.io + Johnny-five + Arduino
+========================================================
+
+Depois de ver o Meetup do Nodebr de São Paulo, mais especificamente a palestra do Paulo Pires e do Alan, resolvi tirar a poeira do meu Arduino e testar o Jhonny-Five e já aproveitando para baixar o socket.io 1.0 e ver tudo rodando.
+
+## Instalando
+
+```
+git clone git@github.com:Pineli/Controle-led-rgb.git
+cd Controle-led-rgb
+npm install
+```
+
+Módulos utilizados
+
+* johnny-five
+* express
+* socket.io
+
+A documentação do Johnny-Five pode ser encontrada [aqui](https://github.com/rwaldron/johnny-five/wiki)
+
+
+Agora conect seu Arduino no cabo USB, faça o upload do **Example > Firmdata > StandandFirmData**
+
+## Executando
+
+```
+node app.js
+```
+No navegador abra a url:
+## Instalando
+
+```
+localhost:3000
+```
+Selecione a cor preferida e a mesma será enviada via Websocket ao NodeJS/Johnny-five e que fará com que o led RGB reproduza a mesma cor, ou cor aproximada, a selecionada.
+
+
+# Circuito utilizado
+
+![docs/breadboard/led-rgb.png](breadboard/led-rgb.png)
+
+
+## License
+Licensed under the MIT license.
