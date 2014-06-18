@@ -43,7 +43,7 @@ Selecione a cor preferida e a mesma será enviada via Websocket ao NodeJS/Johnny
 
 # Demonstração
 
-[![ScreenShot](https://www.youtube.com/watch?v=9Fcb31sa3uo&feature=youtu.be)]
+[![ScreenShot](https://i1.ytimg.com/vi/9Fcb31sa3uo/default.jpg)](https://www.youtube.com/watch?v=9Fcb31sa3uo&feature=youtu.be)
 
 ## License
 Licensed under the MIT license.
