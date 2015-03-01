@@ -2,7 +2,8 @@ var express = require('express'),
     app = express(),
     server = require('http').Server(app),
     io = require('socket.io')(server),
-    five = require("johnny-five");
+    five = require("johnny-five"),
+	led5V;
 
 app.disable('x-powered-by');
 
@@ -18,6 +19,17 @@ app.use("/", express.static(__dirname + "/public"));
 app.get('/', function (req, res) {
   res.sendfile(__dirname + '/public/index.html');
 });
+
+function invertColor(hexTripletColor) {
+    var color = hexTripletColor;
+    color = color.substring(1);           // remove #
+    color = parseInt(color, 16);          // convert to integer
+    color = 0xFFFFFF ^ color;             // invert three bytes
+    color = color.toString(16);           // convert to hex
+    color = ("000000" + color).slice(-6); // pad with leading zeros
+    color = "#" + color;                  // prepend #
+    return color;
+}
 
 server.listen(3000, "127.0.0.1");
 
@@ -36,12 +48,13 @@ five.Board().on("ready", function() {
   });
 
   led.on();
-  led.color("#FF0000");
+  led.color("#00FFFF");
 
   io.on('connection', function (socket) {
 
     socket.on("changeColor",function(data){
-        led.color(data.hex);
+		led5V = invertColor(data.hex)
+        led.color(led5V);
         socket.emit('retorno', data);
     });
 
