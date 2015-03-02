@@ -1,6 +1,6 @@
 {
   "name":     "Controle-led-rgb",
-  "author":   "Pineli <carlospineli@gmail.com> (http://www.pineli.com/) modified by Manuel CQE",
+  "author":   "Pineli <carlospineli@gmail.com> (http://www.pineli.com/)",
   "version":  "0.0.2",
   "description": "Controlando Led RGB com NodeJS + Socke.io + Jhonny-five + Arduino",  
   "dependencies": {
