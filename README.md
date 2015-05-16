@@ -5,12 +5,11 @@ Depois de ver o Meetup do Nodebr de São Paulo, mais especificamente a palestra 
 
 ## Instalando
 
-    ```
     git clone git@github.com:Pineli/Controle-led-rgb.git
     cd Controle-led-rgb
     npm install
-    ```
-
+    
+Teste
 
     #!javascript
     if (teste = 1) {
