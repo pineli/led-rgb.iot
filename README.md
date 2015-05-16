@@ -9,13 +9,6 @@ Depois de ver o Meetup do Nodebr de São Paulo, mais especificamente a palestra 
     cd Controle-led-rgb
     npm install
     
-Teste
-
-    #!javascript
-    if (teste = 1) {
-      console.log('teste');
-    }
-
 
 Módulos utilizados
 
