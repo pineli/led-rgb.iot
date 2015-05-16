@@ -11,6 +11,12 @@ cd Controle-led-rgb
 npm install
 ```
 
+    #!javascript
+    if (teste = 1) {
+      console.log('teste');
+    }
+
+
 Módulos utilizados
 
 * johnny-five
