@@ -16,7 +16,7 @@ Módulos utilizados
 * express
 * socket.io
 
-A documentação do Johnny-Five pode ser encontrada [aqui](https://github.com/rwaldron/johnny-five/wiki){:target="_blank"}
+A documentação do Johnny-Five pode ser encontrada [aqui](https://github.com/rwaldron/johnny-five/wiki)
 
 
 Agora conect seu Arduino no cabo USB, faça o upload do **Example > Firmdata > StandandFirmData**
